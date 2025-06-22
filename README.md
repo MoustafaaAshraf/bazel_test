@@ -1,4 +1,4 @@
-# Bazel Test Project
+# Bazel Playground
 
 A simple Python project to play around with Bazel.
 
