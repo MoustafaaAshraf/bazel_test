@@ -1,0 +1,18 @@
+# Enable Python 3
+build --python_version=3.9
+
+# Enable test caching
+build --test_strategy=exclusive
+
+# Enable build caching
+build --disk_cache=~/.cache/bazel
+
+# Enable remote caching (optional)
+# build --remote_cache=grpc://your-cache-server:9092
+
+# Enable build performance improvements
+build --incompatible_allow_python_version_transitions=true
+build --incompatible_default_to_explicit_init_py=true
+
+# Enable better error messages
+build --verbose_failures 
