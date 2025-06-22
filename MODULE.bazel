@@ -2,11 +2,3 @@ module(
     name = "bazel_test",
     version = "1.0.0",
 )
-
-bazel_dep(name = "rules_python", version = "0.21.0")
-python = use_extension("@rules_python//python/extensions:python.bzl", "python")
-python.toolchain(
-    name = "python3_9",
-    python_version = "3.9",
-)
-use_repo(python, "python3_9_toolchains")

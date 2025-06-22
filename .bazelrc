@@ -1,5 +1,5 @@
 # Enable Python 3
-build --python_version=3.9
+build --python_version=PY3
 
 # Enable test caching
 build --test_strategy=exclusive
